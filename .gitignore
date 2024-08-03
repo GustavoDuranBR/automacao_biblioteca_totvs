@@ -1,0 +1,8 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar a pasta qa
+qa/
+
+# Ignorar arquivos de mapeamento de elementos de página
+Mapeando elementos page login.txt
