@@ -1,45 +1,16 @@
 class HomeElements {
-    home = () => {
-        return '1'
-    }
-
-    cadastroAutoresMenu = () => {
-        return '2'
-    }
-
-    cadastroAutoresWidget = () => {
-        return '1'
-    }
-
-    cadastroLivrosMenu = () => {
-        return '3'
-    }
-
-    cadastroLivrosWidget = () => {
-        return '2'
-    }
-
-    cadastroUsuariosMenu = () => {
-        return '4'
-    }
-
-    cadastroUsuariosWidget = () => {
-        return '3'
-    }
-
-    sobreMenu = () => {
-        return '5'
-    }
-
-    sobreWidget = () => {
-        return '4'
-    }
-
-    primeirosPassosMenu = () => {
-        return '6'
-    }
-
-    sairMenu = () => {
-        return '7'
-    }
-} export default HomeElements;
+    homeMenu = () => '[data-cy="homeMenu"]'
+    cadastroAutoresMenu = () => '/html/body/app-root/app-home/div/po-menu/div/div[2]/div/div[2]/div/div/nav/ul/li[2]/po-menu-item/a/div/span'
+    cadastroLivrosMenu = () => '[data-cy="cadastroLivrosMenu"]'
+    cadastroUsuariosMenu = () => '[data-cy="cadastroUsuariosMenu"]'
+    sobreMenu = () => '[data-cy="sobreMenu"]'
+    primeirosPassosMenu = () => '[data-cy="primeirosPassosMenu"]'
+  
+    cadastroAutoresWidget = () => 'po-widget:nth-of-type(1) .po-widget-action'
+    cadastroLivrosWidget = () => '[data-cy="cadastroLivrosWidget"]'
+    cadastroUsuariosWidget = () => '[data-cy="cadastroUsuariosWidget"]'
+    sobreWidget = () => '[data-cy="sobreWidget"]'
+    primeirosPassosWidget = () => '[data-cy="primeirosPassosWidget"]'
+  }
+  export default HomeElements;
+  

@@ -1,20 +1,25 @@
 class AutorElements {
-    nomeAutor= () => {
-        return 'input[name="author"]'
+    nomeAutor = () => {
+        return '[data-cy="nameAuthor"]'
     }
 
     nacionalidade = () => {
-        return 'input[name="nacionalidade"]'
+        return '[data-cy="nacionalidadeAuthor"]'
     }
 
     btnSalvar = () => {
-        return 'po-button:nth-of-type(2) > .po-button'
+        return '[data-cy="btnSave"]'
     }
 
     btnCancelar = () => {
-        return '.button-wrapper > po-button:nth-of-type(1) > .po-button'
+        return '[data-cy="btnCancel"]'
     }
 
+    tabelaAutores = () => {
+        return '[data-cy="tableAuthor"]'
+    }
+
+    // Botões sem data-cy
     btnGerenciadorColunas = () => {
         return '.ng-star-inserted.po-table-actions-column-manager > po-button > .po-button'
     }
@@ -30,5 +35,6 @@ class AutorElements {
     btnExcluir = () => {
         return 'li:nth-of-type(2) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
     }
+}
 
-} export default AutorElements;
+export default AutorElements

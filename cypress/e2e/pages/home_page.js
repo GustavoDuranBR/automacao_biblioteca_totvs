@@ -1,21 +1,19 @@
-/// <reference types="Cypress" />
 import HomeElements from "../elements/home_elements";
-
 const homeElements = new HomeElements;
 const url = Cypress.config('baseUrl');
 
 class HomePage {
-    acessarHomePage() {
-        cy.visit(url, '/home');
-    }
+  acessarHomePage() {
+    cy.visit(`${url}/home`)
+  }
 
-    cadastrarAutorMenuLateral() {
-        cy.get(homeElements.cadastroAutoresMenu()).click()
-    }
+  selecionarCadastroAutorMenuLateral() {
+    cy.get(homeElements.cadastroAutoresMenu()).click({force: true})
+  }
 
-    cadastrarAutorWidget() {
-        cy.get(homeElements.cadastroAutoresWidget()).click()
-    }
+  selecionarCadastroAutorWidget() {
+    cy.get(homeElements.cadastroAutoresWidget()).click({force:true})
+
 }
-
+}
 export default HomePage;
