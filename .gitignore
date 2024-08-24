@@ -1,8 +1,10 @@
 # Ignorar a pasta node_modules
 node_modules/
 
-# Ignorar a pasta qa
+# Ignorar a pasta qa e seus subdiretórios backend e frontend
 qa/
+qa/backend/
+qa/frontend/
 
 # Ignorar arquivos de mapeamento de elementos de página
 Mapeando elementos.txt
