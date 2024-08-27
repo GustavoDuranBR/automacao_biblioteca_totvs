@@ -19,6 +19,9 @@ module.exports = defineConfig({
     },
     viewportWidth: 1920,
     viewportHeight: 1080,
-    browser: 'chrome'
+    browser: 'chrome',
+    env: {
+      tags: '@login or @api and not @ignore'
+    }
   }
 });

@@ -5,6 +5,7 @@ node_modules/
 qa/
 qa/backend/
 qa/frontend/
+screenshots/
 
 # Ignorar arquivos de mapeamento de elementos de página
 Mapeando elementos.txt

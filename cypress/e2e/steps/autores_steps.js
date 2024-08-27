@@ -1,4 +1,4 @@
-import HomePage from "../pages/home_page";
+import HomePage from "../pages/autores_page";
 const homePage = new HomePage();
 
 Given(/^eu esteja na página Home$/, () => {

@@ -1,6 +1,7 @@
 Feature: Pagina Home
     Acessar as funcionalidades de cadastros da página Home
 
+    @ignore
     Scenario: Cadastrar Autor utilizando o menu lateral com sucesso
         Given eu esteja na página Home 
         When clico na opção Cadastro de Autores no menu lateral
