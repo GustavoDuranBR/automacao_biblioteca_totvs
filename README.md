@@ -48,7 +48,7 @@ Read, Update, Delete), e validação de mensagens.
 1. **Clone o Repositório**
 
    ```bash
-   git clone https://github.com/GustavoDuranBR/automacao_biblioteca_totvs.git
+   git clone https://github.com/SEU_USUARIO/automacao_biblioteca_totvs.git
    ```
 
 2. **Instale as Dependências**
