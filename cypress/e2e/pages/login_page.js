@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 import LoginElements from "../elements/login_elements";
 
 const loginElements = new LoginElements;
@@ -6,7 +5,7 @@ const url = Cypress.config('baseUrl');
 
 class LoginPage {
     acessarHomePage() {
-        cy.visit(url);
+        cy.visit(Cypress.env('frontendUrl'))
     }
 
     preencherLogin(login, senha) {

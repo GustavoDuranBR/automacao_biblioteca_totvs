@@ -10,7 +10,6 @@ const cucumber = require("cypress-cucumber-preprocessor").default;
 module.exports = defineConfig({
   e2e: {
     defaultCommandTimeout: 10000,
-    baseUrl: "http://localhost:4200",
     specPattern: "**/*.feature",
     setupNodeEvents(on, config) {
       on("file:preprocessor", (file) => {
@@ -21,7 +20,9 @@ module.exports = defineConfig({
     viewportHeight: 1080,
     browser: 'chrome',
     env: {
-      tags: '@login or @api and not @ignore'
+      tags: '@login or @api and not @ignore',
+      frontendUrl: "http://localhost:4200",
+      backendUrl: "http://localhost:3000"
     }
   }
 });

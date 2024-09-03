@@ -4,7 +4,7 @@ const url = Cypress.config('baseUrl');
 
 class HomePage {
   acessarHomePage() {
-    cy.visit(`${url}/home`)
+    cy.visit(Cypress.env('frontendUrl') + '/home')
   }
 
   selecionarCadastroAutorMenuLateral() {
