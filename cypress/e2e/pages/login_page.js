@@ -1,7 +1,6 @@
 import LoginElements from "../elements/login_elements";
 
 const loginElements = new LoginElements;
-const url = Cypress.config('baseUrl');
 
 class LoginPage {
     acessarHomePage() {

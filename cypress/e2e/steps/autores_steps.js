@@ -1,55 +1,59 @@
-import HomePage from "../pages/autores_page";
-const homePage = new HomePage();
+/// <reference types="cypress" />
 
-Given(/^eu esteja na página Home$/, () => {
-    homePage.acessarHomePage();
-});
+import HomePage from "../pages/autores_page"
+import AutorPage from "../pages/autores_page"
 
-When(/^clico na opção Cadastro de Autores no menu lateral$/, () => {
-    homePage.selecionarCadastroAutorWidget();
-});
+const homePage = new HomePage()
+const autorPage = new AutorPage()
 
-When(/^sou direcionado para a página Cadastro Autor$/, () => {
-    cy.get('app-root app-home po-page-default po-page po-page-content app-author > div > h2')
-        .should('contain.text', 'Cadastro de Autor');
-});
+Given('eu esteja na página Home', () => {
+    homePage.acessarHomePage()
+})
 
-When(/^clico no campo Nome do Autor$/, () => {
-    cy.get('[data-cy=nameAuthor]').click();
-});
+When('clico na opção Cadastro de Autores no menu lateral', () => {
+    homePage.selecionarCadastroAutorWidget()
+})
 
-When(/^preencho o campo selecionado com o nome "([^"]*)"$/, (nome) => {
-    cy.get('[data-cy=nameAuthor]').type(nome);
-});
+When('sou direcionado para a página Cadastro Autor', () => {
+    autorPage.acessarPaginaAutor()
+})
 
-When(/^clico no campo Nacionalidade$/, () => {
-    cy.get('[data-cy=nacionalidadeAuthor]').click();
-});
+When('clico no campo Nome do Autor', () => {
+    autorPage.nomeAutor()   
+})
 
-When(/^preencho o campo selecionado com a nacionalidade "([^"]*)"$/, (nacionalidade) => {
-    cy.get('[data-cy=nacionalidadeAuthor]').type(nacionalidade);
-});
+When('preencho o campo selecionado com o nome {string}', (nome) => {
+    autorPage.nomeAutor().type(nome)
+})
+
+When('clico no campo Nacionalidade', () => {
+    autorPage.nacionalidadeAutor()
+})
+
+When('preencho o campo selecionado com a nacionalidade {string}', (nacionalidade) => {
+    autorPage.nacionalidadeAutor().type(nacionalidade)
+})
 
 // Cenário: Cadastrar Autor sem preencher o campo Nacionalidade
-When(/^deixo o campo Nacionalidade em branco$/, () => {
-    cy.get('[data-cy=nacionalidadeAuthor] input').clear();
-});
+When('deixo o campo Nacionalidade em branco', () => {
+    autorPage.nacionalidadeAutor().clear()
+})
 
 // Cenário: Cadastrar Autor sem preencher o campo Nome do Autor
-When(/^deixo o campo Nome do Autor em branco$/, () => {
-    cy.get('[data-cy=nameAuthor] input').clear();
-});
+When('deixo o campo Nome do Autor em branco', () => {
+    autorPage.nomeAutor().clear()
+})
 
 // Cenário: Cadastrar Autor sem preencher os campos
-When(/^deixo os campos Nome do Autor e Nacionalidade em branco$/, () => {
-    cy.get('[data-cy=nameAuthor] input').clear();
-    cy.get('[data-cy=nacionalidadeAuthor] input').clear();
-});
+When('deixo os campos Nome do Autor e Nacionalidade em branco', () => {
+    autorPage.nomeAutor().clear()
+    autorPage.nacionalidadeAutor().clear()
+})
 
-When(/^clico no botão Salvar$/, () => {
-    cy.get('[data-cy=btnSave]').click();
-});
+When('clico no botão Salvar', () => {
+    autorPage.botaoSalvar().click()
+})
 
-Then(/^o sistema exibe a mensagem "([^"]*)"$/, (mensagem) => {
-    cy.contains(mensagem).should('be.visible');
-});
+Then('o sistema exibe a mensagem {string}', (mensagem) => {
+    cy.contains(mensagem).should('be.visible')
+})

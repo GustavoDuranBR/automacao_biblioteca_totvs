@@ -1,40 +1,43 @@
 class AutorElements {
-    nomeAutor = () => {
-        return '[data-cy="nameAuthor"]'
-    }
+  paginaAutores = () => {
+    return '[data-cy=titleAuthor]'
+  }
 
-    nacionalidade = () => {
-        return '[data-cy="nacionalidadeAuthor"]'
-    }
+  campoNome = () => {
+    return '[data-cy=nameAuthor]'
+  }
 
-    btnSalvar = () => {
-        return '[data-cy="btnSave"]'
-    }
+  campoNacionalidade = () => {
+    return '[data-cy=nacionalidadeAuthor]'
+  }
 
-    btnCancelar = () => {
-        return '[data-cy="btnCancel"]'
-    }
+  btnSalvar = () => {
+    return '[data-cy=btnSave]'
+  }
 
-    tabelaAutores = () => {
-        return '[data-cy="tableAuthor"]'
-    }
+  btnCancelar = () => {
+    return '[data-cy=btnCancel]'
+  }
 
-    // Botões sem data-cy
-    btnGerenciadorColunas = () => {
-        return '.ng-star-inserted.po-table-actions-column-manager > po-button > .po-button'
-    }
+  tabelaAutores = () => {
+    return '[data-cy=tableAuthor]'
+  }
 
-    btnActions = () => {
-        return '.ng-star-inserted.po-table-column-actions'
-    }
+  // Botões sem data-cy
+  btnGerenciadorColunas = () => {
+    return '.ng-star-inserted.po-table-actions-column-manager > po-button > .po-button'
+  }
 
-    btnEditar = () => {
-        return 'li:nth-of-type(1) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
-    }
+  btnActions = () => {
+    return '.ng-star-inserted.po-table-column-actions'
+  }
 
-    btnExcluir = () => {
-        return 'li:nth-of-type(2) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
-    }
+  btnEditar = () => {
+    return 'li:nth-of-type(1) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
+  }
+
+  btnExcluir = () => {
+    return 'li:nth-of-type(2) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
+  }
 }
-
-export default AutorElements
+export default AutorElements;
