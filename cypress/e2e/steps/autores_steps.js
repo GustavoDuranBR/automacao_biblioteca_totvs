@@ -1,17 +1,16 @@
 /// <reference types="cypress" />
 
-import HomePage from "../pages/autores_page"
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
 import AutorPage from "../pages/autores_page"
 
-const homePage = new HomePage()
 const autorPage = new AutorPage()
 
 Given('eu esteja na página Home', () => {
-    homePage.acessarHomePage()
+    autorPage.acessarHomePage()
 })
 
 When('clico na opção Cadastro de Autores no menu lateral', () => {
-    homePage.selecionarCadastroAutorWidget()
+    autorPage.selecionarCadastroAutorWidget()
 })
 
 When('sou direcionado para a página Cadastro Autor', () => {
@@ -50,10 +49,40 @@ When('deixo os campos Nome do Autor e Nacionalidade em branco', () => {
     autorPage.nacionalidadeAutor().clear()
 })
 
+// Editar o autor cadastrado
+When('clico no botão de opções', () => {
+    autorPage.identificarAutor()
+})
+
+When('seleciono a opção editar', () => {
+    autorPage.editarAutor()
+})
+
+When('clico no campo Nome do Autor', () => {
+    autorPage.nomeAutor()
+})
+
+When('mudo o nome para {string}', (nomeEditado) => {
+    autorPage.nomeAutor().type(nomeEditado)
+})
+
+// Excluir o autor cadastrado
+When('clico no botão de opções', () => {
+    autorPage.identificarAutor()
+})
+
+When('seleciono a opção excluir', () => {
+    autorPage.excluirAutorEditado()
+})
+
+// Clicar no botão Salvar
 When('clico no botão Salvar', () => {
     autorPage.botaoSalvar().click()
 })
 
+// Mensagem ao finalizar 
 Then('o sistema exibe a mensagem {string}', (mensagem) => {
     cy.contains(mensagem).should('be.visible')
 })
+
+

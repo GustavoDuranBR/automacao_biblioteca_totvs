@@ -29,7 +29,7 @@ class AutorElements {
   }
 
   btnActions = () => {
-    return '.ng-star-inserted.po-table-column-actions'
+    return '.po-clickable.po-icon.po-icon-more'
   }
 
   btnEditar = () => {

@@ -34,5 +34,27 @@ class AutorPage {
   botaoSalvar() {
     return cy.get(autorElements.btnSalvar())
   }
+
+  identificarAutor() {
+    return cy.get('tbody').contains('td', 'Clarice Lispector').then(($el) => {
+      const row = $el.parents('tr')
+      cy.wrap(row).find(autorElements.btnActions()).click({force:true})
+    })
+  }
+
+  identificarAutorEditado() {
+    return cy.get('tbody').contains('td', 'Clarice Lispector Editado').then(($el) => {
+      const row = $el.parents('tr')
+      cy.wrap(row).find(autorElements.btnActions()).click({force:true})
+    })
+  }
+
+  editarAutor() {
+    return cy.get(autorElements.btnEditar()).click({force:true})
+  }
+
+  excluirAutorEditado() {
+    return cy.get(autorElements.btnExcluir()).click({force:true})
+  }
 }
 export default AutorPage;
