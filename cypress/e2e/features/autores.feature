@@ -1,5 +1,5 @@
-Feature: Pagina Home
-    Acessar as funcionalidades de cadastros da página Home
+Feature: Pagina Autores
+    Acessar as funcionalidades de cadastros da página Autores
 
     @ignore
     Scenario: Cadastrar Autor utilizando o menu lateral com sucesso
@@ -7,9 +7,9 @@ Feature: Pagina Home
         When clico na opção Cadastro de Autores no menu lateral
         And sou direcionado para a página Cadastro Autor
         And clico no campo Nome do Autor
-        And preencho o campo selecionado com o nome "Clarice Lispector" 
+        And preencho o campo selecionado com o nome "Robert C. Martin" 
         And clico no campo Nacionalidade
-        And preencho o campo selecionado com a nacionalidade "Chechelnyk, Ucrânia"
+        And preencho o campo selecionado com a nacionalidade "Estados Unidos"
         And clico no botão Salvar
         Then o sistema exibe a mensagem "Autor adicionado com sucesso!"
 
@@ -45,22 +45,3 @@ Feature: Pagina Home
         And deixo o campo Nacionalidade em branco 
         And clico no botão Salvar
         Then o sistema exibe a mensagem "Preencha todos os campos obrigatórios!"
-
-    Scenario: Editar o autor cadastrado  
-        Given eu esteja na página Home 
-        When clico na opção Cadastro de Autores no menu lateral
-        And sou direcionado para a página Cadastro Autor
-        And clico no botão de opções 
-        And seleciono a opção editar 
-        And clico no campo Nome do Autor
-        And mudo o nome para " Editado"
-        And clico no botão Salvar
-        Then o sistema exibe a mensagem "Autor editado com sucesso!"
-
-    Scenario: Excluir o autor cadastrado  
-        Given eu esteja na página Home 
-        When clico na opção Cadastro de Autores no menu lateral
-        And sou direcionado para a página Cadastro Autor
-        And clico no botão de opções 
-        And seleciono a opção excluir 
-        Then o sistema exibe a mensagem "Autor excluído com sucesso!"

@@ -4,10 +4,9 @@
 ![Cucumber](https://img.shields.io/badge/cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
 
 ## Status do Projeto
+
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 
@@ -80,6 +79,16 @@ Para rodar os testes em modo headless (sem interface gráfica), use:
 npx cypress run
 ```
 
+### Rodar Todos os Testes
+
+Para rodar todos os testes em sequência de forma automatizada, execute o seguinte comando:
+
+```bash
+npm run test:sequence
+```
+
+Esse comando executará todos os testes de forma sequencial, garantindo que o fluxo de teste completo seja verificado.
+
 ## Planejamento de Testes
 
 ### 1. Objetivo dos Testes
@@ -114,8 +123,6 @@ npx cypress run
 - de erro correspondentes.
 - **Status**: Realizado com sucesso.
 
-### 4. Testes a Realizar
-
 #### Testes de Edição
 
 - **Descrição**: Editar um autor, livro ou usuário existente e validar que os dados foram atualizados corretamente.
@@ -123,6 +130,8 @@ npx cypress run
 #### Testes de Exclusão
 
 - **Descrição**: Excluir um autor, livro ou usuário e validar que ele foi removido corretamente da lista.
+
+### 4. Testes a Realizar
 
 #### Testes de Performance
 
@@ -142,7 +151,3 @@ Contribuições são bem-vindas! Por favor, siga as etapas abaixo para contribui
 3. Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
 4. Faça o push para a branch (`git push origin feature/nova-funcionalidade`).
 5. Crie um Pull Request.
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).

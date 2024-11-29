@@ -11,11 +11,11 @@ class AutorPage {
   }
 
   selecionarCadastroAutorMenuLateral() {
-    return cy.get(homeElements.cadastroAutoresMenu()).click({force:true})
+    return cy.get(homeElements.cadastroAutoresMenu()).click({ force: true })
   }
 
   selecionarCadastroAutorWidget() {
-    return cy.get(homeElements.cadastroAutoresWidget()).click({force:true})
+    return cy.get(homeElements.cadastroAutoresWidget()).click({ force: true })
   }
 
   acessarPaginaAutor() {
@@ -36,25 +36,25 @@ class AutorPage {
   }
 
   identificarAutor() {
-    return cy.get('tbody').contains('td', 'Clarice Lispector').then(($el) => {
+    return cy.get('tbody').contains('td', 'Robert C. Martin').then(($el) => {
       const row = $el.parents('tr')
-      cy.wrap(row).find(autorElements.btnActions()).click({force:true})
+      cy.wrap(row).find(autorElements.btnActions()).click({ force: true })
     })
   }
 
   identificarAutorEditado() {
-    return cy.get('tbody').contains('td', 'Clarice Lispector Editado').then(($el) => {
+    return cy.get('tbody').contains('td', 'Robert C. Martin (Uncle Bob)').then(($el) => {
       const row = $el.parents('tr')
-      cy.wrap(row).find(autorElements.btnActions()).click({force:true})
+      cy.wrap(row).find(autorElements.btnActions()).click({ force: true })
     })
   }
 
   editarAutor() {
-    return cy.get(autorElements.btnEditar()).click({force:true})
+    cy.get(autorElements.btnEditar()).click({ force: true });
   }
 
   excluirAutorEditado() {
-    return cy.get(autorElements.btnExcluir()).click({force:true})
+    return cy.get(autorElements.btnExcluir()).click({ force: true })
   }
 }
 export default AutorPage;

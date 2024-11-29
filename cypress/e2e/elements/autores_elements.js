@@ -1,42 +1,42 @@
 class AutorElements {
-  paginaAutores = () => {
+  paginaAutores() {
     return '[data-cy=titleAuthor]'
   }
 
-  campoNome = () => {
+  campoNome() {
     return '[data-cy=nameAuthor]'
   }
 
-  campoNacionalidade = () => {
+  campoNacionalidade() {
     return '[data-cy=nacionalidadeAuthor]'
   }
 
-  btnSalvar = () => {
+  btnSalvar() {
     return '[data-cy=btnSave]'
   }
 
-  btnCancelar = () => {
+  btnCancelar() {
     return '[data-cy=btnCancel]'
   }
 
-  tabelaAutores = () => {
+  tabelaAutores() {
     return '[data-cy=tableAuthor]'
   }
 
   // Botões sem data-cy
-  btnGerenciadorColunas = () => {
+  btnGerenciadorColunas() {
     return '.ng-star-inserted.po-table-actions-column-manager > po-button > .po-button'
   }
 
-  btnActions = () => {
+  btnActions() {
     return '.po-clickable.po-icon.po-icon-more'
   }
 
-  btnEditar = () => {
+  btnEditar() {
     return 'li:nth-of-type(1) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
   }
 
-  btnExcluir = () => {
+  btnExcluir() {
     return 'li:nth-of-type(2) > .ng-star-inserted > .ng-star-inserted.po-item-list.po-item-list__action'
   }
 }

@@ -1,16 +1,16 @@
 class LoginElements {
-    textoBoasVindas = () => {
+    textoBoasVindas() {
         return '.po-page-login-header-welcome'
     }
-    campoEmail = () => {
+    campoEmail() {
         return 'input[name="login"]'
     }
 
-    campoSenha = () => {
+    campoSenha() {
         return 'input[name="password"]'
     }
 
-    btnEntrar = () => {
+    btnEntrar() {
         return '.po-lg-12.po-page-login-button.po-page-login-field-size > .po-button'
     }
 } export default LoginElements;
