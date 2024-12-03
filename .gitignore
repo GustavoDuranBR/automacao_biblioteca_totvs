@@ -6,7 +6,8 @@ qa/
 qa/backend/
 qa/frontend/
 screenshots/
-
 # Ignorar arquivos de mapeamento de elementos de página
 Mapeando elementos.txt
 Mapeando elementos page login.txt
+
+venv/

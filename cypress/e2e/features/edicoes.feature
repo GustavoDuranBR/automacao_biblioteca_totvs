@@ -1,4 +1,4 @@
-Feature: Edição de Livros e Autores
+Feature: Edicao de Livros e Autores
 
   Scenario: Editar o autor cadastrado
     Given eu esteja na página Home

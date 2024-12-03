@@ -1,4 +1,4 @@
-Feature: Página Livros
+Feature: Pagina Livros
   Acessar as funcionalidades de cadastro na página Livros
 
   @ignore

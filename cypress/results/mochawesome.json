@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-02T21:12:00.865Z",
+    "end": "2024-12-02T21:12:09.672Z",
+    "duration": 8807,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e19a4b78-dae6-4846-a355-956024029d32",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\login.feature",
+      "file": "cypress\\e2e\\features\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e28f001-8cde-4e89-88db-68db2377010e",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso com sucesso",
+              "fullTitle": "Login Acesso com sucesso",
+              "timedOut": null,
+              "duration": 3499,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "90731bf1-dec6-403a-9a7b-ca8fac974616",
+              "parentUUID": "8e28f001-8cde-4e89-88db-68db2377010e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Acesso negado",
+              "fullTitle": "Login Acesso negado",
+              "timedOut": null,
+              "duration": 3074,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "Error: Mensagem de erro não encontrada",
+                "estack": "Error: Mensagem de erro não encontrada\n    at Context.eval (cypress/e2e/pages/login_page.js:33:22)",
+                "diff": null
+              },
+              "uuid": "b787e700-b5a7-4073-b94b-514ae2ccee01",
+              "parentUUID": "8e28f001-8cde-4e89-88db-68db2377010e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90731bf1-dec6-403a-9a7b-ca8fac974616"
+          ],
+          "failures": [
+            "b787e700-b5a7-4073-b94b-514ae2ccee01"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6573,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "inline": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

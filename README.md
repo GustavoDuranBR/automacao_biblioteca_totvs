@@ -9,23 +9,15 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-
-Este projeto está atualmente em desenvolvimento. 
-As funcionalidades principais estão sendo implementadas e testadas. 
-Algumas funcionalidades podem não estar completas ou totalmente testadas. 
-Agradecemos sua compreensão e feedback enquanto continuamos a melhorar e refinar o projeto.
+Este projeto está atualmente em desenvolvimento. As funcionalidades principais estão sendo implementadas e testadas. Algumas funcionalidades podem não estar completas ou totalmente testadas. Agradecemos sua compreensão e feedback enquanto continuamos a melhorar e refinar o projeto.
 
 ## Visão Geral
 
-Este projeto utiliza **Cypress** e **Cucumber** para automação de testes de uma aplicação de biblioteca TOTVS. 
-A aplicação permite adicionar, editar e excluir autores, livros e usuários. O projeto segue a técnica de **Page Object Model** (POM) 
-e utiliza **data-cy** para facilitar a seleção de elementos durante os testes.
+Este projeto utiliza **Cypress** e **Cucumber** para automação de testes de uma aplicação de biblioteca TOTVS. A aplicação permite adicionar, editar e excluir autores, livros e usuários. O projeto segue a técnica de **Page Object Model** (POM) e utiliza **data-cy** para facilitar a seleção de elementos durante os testes.
 
 ## Objetivo
 
-O objetivo deste projeto é garantir que todas as funcionalidades principais da aplicação estejam funcionando corretamente 
-e que a experiência do usuário seja a esperada. Os testes são divididos em categorias, incluindo navegação, CRUD (Create, 
-Read, Update, Delete), e validação de mensagens.
+O objetivo deste projeto é garantir que todas as funcionalidades principais da aplicação estejam funcionando corretamente e que a experiência do usuário seja a esperada. Os testes são divididos em categorias, incluindo navegação, CRUD (Create, Read, Update, Delete), e validação de mensagens.
 
 ## Estrutura do Projeto
 
@@ -39,8 +31,7 @@ Read, Update, Delete), e validação de mensagens.
 - **Cypress**: Framework para testes de front-end que proporciona uma execução rápida e confiável de testes.
 - **Cucumber**: Ferramenta que permite escrever testes em uma linguagem natural usando Gherkin.
 - **Page Object Model**: Técnica que organiza o código de teste e facilita a manutenção.
-- **data-cy**: Atributo personalizado usado para selecionar elementos em testes, promovendo uma abordagem mais robusta
-- e menos propensa a falhas devido a alterações no HTML.
+- **data-cy**: Atributo personalizado usado para selecionar elementos em testes, promovendo uma abordagem mais robusta e menos propensa a falhas devido a alterações no HTML.
 
 ## Configuração
 
@@ -60,8 +51,7 @@ Read, Update, Delete), e validação de mensagens.
 
 3. **Configure o Ambiente**
 
-   Certifique-se de ter as variáveis de ambiente necessárias definidas para a configuração do Cypress e qualquer outra configuração
-   específica da aplicação.
+   Certifique-se de ter as variáveis de ambiente necessárias definidas para a configuração do Cypress e qualquer outra configuração específica da aplicação.
 
 ## Execução dos Testes
 
@@ -113,23 +103,23 @@ Esse comando executará todos os testes de forma sequencial, garantindo que o fl
 
 #### Testes de Cadastro com Sucesso
 
-- **Descrição**: Inserção de um autor, livro ou usuário com todos os campos preenchidos corretamente e verificação
-- das mensagens de sucesso.
+- **Descrição**: Inserção de um autor, livro ou usuário com todos os campos preenchidos corretamente e verificação das mensagens de sucesso.
 - **Status**: Realizado com sucesso.
 
 #### Testes de Validação de Formulário
 
-- **Descrição**: Teste de submissão de formulários com campos obrigatórios em branco e verificação das mensagens
-- de erro correspondentes.
+- **Descrição**: Teste de submissão de formulários com campos obrigatórios em branco e verificação das mensagens de erro correspondentes.
 - **Status**: Realizado com sucesso.
 
 #### Testes de Edição
 
 - **Descrição**: Editar um autor, livro ou usuário existente e validar que os dados foram atualizados corretamente.
+- **Status**: Realizado com sucesso.
 
 #### Testes de Exclusão
 
 - **Descrição**: Excluir um autor, livro ou usuário e validar que ele foi removido corretamente da lista.
+- **Status**: Realizado com sucesso.
 
 ### 4. Testes a Realizar
 
@@ -139,8 +129,7 @@ Esse comando executará todos os testes de forma sequencial, garantindo que o fl
 
 #### Testes de Integração
 
-- **Descrição**: Validar a integração entre os componentes da aplicação, especialmente entre o front-end e o back-end
-- durante as operações CRUD.
+- **Descrição**: Validar a integração entre os componentes da aplicação, especialmente entre o front-end e o back-end durante as operações CRUD.
 
 ## Contribuição
 
@@ -151,3 +140,37 @@ Contribuições são bem-vindas! Por favor, siga as etapas abaixo para contribui
 3. Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
 4. Faça o push para a branch (`git push origin feature/nova-funcionalidade`).
 5. Crie um Pull Request.
+
+---
+
+## Página Streamlit e Relatório de Testes
+
+### Página Streamlit
+
+A aplicação também possui uma interface Streamlit para exibição dos relatórios de execução dos testes e resultados detalhados. Você pode acessar a interface com os testes executados diretamente através de um navegador, permitindo verificar as execuções em tempo real.
+
+Para rodar a aplicação Streamlit:
+
+1. Instale as dependências necessárias:
+   
+   ```bash
+   pip install streamlit
+   ```
+
+2. Execute o servidor Streamlit:
+   
+   ```bash
+   streamlit run app.py
+   ```
+
+3. Acesse a página no navegador em `http://localhost:8501`.
+
+### Relatório Completo dos Testes Executados
+
+O relatório completo dos testes executados pode ser visualizado diretamente na página do Streamlit. A interface mostra as informações detalhadas sobre os testes realizados, incluindo:
+
+- Status de cada teste (Passado/Falhado).
+- Descrição dos testes.
+- Resultados dos testes com mensagens detalhadas sobre sucessos e falhas.
+
+A funcionalidade de relatórios em tempo real ajuda a visualizar o andamento do ciclo de testes, facilitando a análise e identificação de problemas nas funcionalidades da aplicação.

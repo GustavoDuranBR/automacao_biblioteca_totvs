@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-02T21:12:13.300Z",
+    "end": "2024-12-02T21:12:20.658Z",
+    "duration": 7358,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9d325b11-5563-4361-88aa-c0626b2d264b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\autores.feature",
+      "file": "cypress\\e2e\\features\\autores.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "31443d87-9dea-405a-a04a-0ba73526451d",
+          "title": "Pagina Autores",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastrar Autor utilizando o menu lateral com sucesso",
+              "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral com sucesso",
+              "timedOut": null,
+              "duration": 2069,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0f188542-2ba3-48da-9ab2-e22bd1684b7b",
+              "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastrar Autor utilizando o menu lateral sem preencher o campo Nacionalidade",
+              "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral sem preencher o campo Nacionalidade",
+              "timedOut": null,
+              "duration": 1105,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a747ed72-dac4-4f5d-be62-e5a5d804cb1f",
+              "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastrar Autor utilizando o menu lateral sem preencher o campo Nome do Autor",
+              "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral sem preencher o campo Nome do Autor",
+              "timedOut": null,
+              "duration": 1142,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "3e94f6b6-58f7-4ac1-af85-fab41eaf593d",
+              "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastrar Autor utilizando o menu lateral sem preencher os campos",
+              "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral sem preencher os campos",
+              "timedOut": null,
+              "duration": 863,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "62d24c93-984f-4954-881d-5c4f7c7e889d",
+              "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0f188542-2ba3-48da-9ab2-e22bd1684b7b",
+            "a747ed72-dac4-4f5d-be62-e5a5d804cb1f",
+            "3e94f6b6-58f7-4ac1-af85-fab41eaf593d",
+            "62d24c93-984f-4954-881d-5c4f7c7e889d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5179,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "inline": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

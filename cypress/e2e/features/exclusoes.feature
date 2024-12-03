@@ -1,4 +1,4 @@
-Feature: Exclusão de Livros e Autores
+Feature: Exclusao de Livros e Autores
 
   Scenario: Excluir o Livro cadastrado
     Given eu esteja na página Home
