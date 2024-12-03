@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-02T21:12:24.539Z",
-    "end": "2024-12-02T21:12:25.405Z",
-    "duration": 866,
+    "start": "2024-12-03T19:11:28.936Z",
+    "end": "2024-12-03T19:11:29.476Z",
+    "duration": 540,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4e58d925-d815-44a7-b86c-fd4d152a51cb",
+      "uuid": "35f26c00-964b-421c-b8ca-75a95c68aea4",
       "title": "",
       "fullFile": "cypress\\e2e\\features\\autores_api.feature",
       "file": "cypress\\e2e\\features\\autores_api.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+          "uuid": "b5224199-ff73-4286-8e6e-924d9662f6d1",
           "title": "Testar API de Autores",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Listar todos os autores",
               "fullTitle": "Testar API de Autores Listar todos os autores",
               "timedOut": null,
-              "duration": 449,
+              "duration": 119,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "214561fd-b87d-4f7b-b4e5-0ff9c16cc0fa",
-              "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+              "uuid": "459e8dcd-c7fe-45c4-8287-8191d609b9b8",
+              "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Cadastrar um novo autor",
               "fullTitle": "Testar API de Autores Cadastrar um novo autor",
               "timedOut": null,
-              "duration": 73,
+              "duration": 71,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "41dc3a5e-2866-4eb5-9620-14c304abc302",
-              "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+              "uuid": "0f6a8e15-a354-40e4-a62f-5f81e0866aa4",
+              "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Atualizar um autor existente",
               "fullTitle": "Testar API de Autores Atualizar um autor existente",
               "timedOut": null,
-              "duration": 112,
+              "duration": 118,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "10417c98-69fc-4ae7-84f2-6123a8c46180",
-              "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+              "uuid": "80475f10-5aff-4cb2-bdf2-37d9141dcc27",
+              "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "Deletar um autor existente",
               "fullTitle": "Testar API de Autores Deletar um autor existente",
               "timedOut": null,
-              "duration": 158,
+              "duration": 157,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -101,23 +101,23 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "7eb01508-f4fc-4816-bc45-8378455ec2c8",
-              "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+              "uuid": "9c231560-4074-4605-8544-97e1e26ca035",
+              "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "214561fd-b87d-4f7b-b4e5-0ff9c16cc0fa",
-            "41dc3a5e-2866-4eb5-9620-14c304abc302",
-            "10417c98-69fc-4ae7-84f2-6123a8c46180",
-            "7eb01508-f4fc-4816-bc45-8378455ec2c8"
+            "459e8dcd-c7fe-45c4-8287-8191d609b9b8",
+            "0f6a8e15-a354-40e4-a62f-5f81e0866aa4",
+            "80475f10-5aff-4cb2-bdf2-37d9141dcc27",
+            "9c231560-4074-4605-8544-97e1e26ca035"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 792,
+          "duration": 465,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -141,7 +141,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -153,7 +153,7 @@
       "options": {
         "reportDir": "cypress/results",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true,
         "inline": true
       },

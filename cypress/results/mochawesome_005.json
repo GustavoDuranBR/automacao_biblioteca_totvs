@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-02T21:13:08.791Z",
-    "end": "2024-12-02T21:13:14.720Z",
-    "duration": 5929,
+    "start": "2024-12-03T19:12:08.946Z",
+    "end": "2024-12-03T19:12:13.016Z",
+    "duration": 4070,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bd7e86aa-782e-4124-9020-bce1a773f4b2",
+      "uuid": "948452e6-cb06-4a05-b7b0-1309c839374c",
       "title": "",
       "fullFile": "cypress\\e2e\\features\\exclusoes.feature",
       "file": "cypress\\e2e\\features\\exclusoes.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "71de9738-4896-4ecc-b5df-bf632df37fb9",
+          "uuid": "26aa3992-e4d8-424f-b541-2ae221a0b638",
           "title": "Exclusao de Livros e Autores",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Excluir o Livro cadastrado",
               "fullTitle": "Exclusao de Livros e Autores Excluir o Livro cadastrado",
               "timedOut": null,
-              "duration": 1989,
+              "duration": 1725,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "3dbd257a-3d3a-4594-abc4-3475a92ae0e2",
-              "parentUUID": "71de9738-4896-4ecc-b5df-bf632df37fb9",
+              "uuid": "81bfe1a4-5289-4ad4-b84c-053ad38767f1",
+              "parentUUID": "26aa3992-e4d8-424f-b541-2ae221a0b638",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Excluir o autor cadastrado",
               "fullTitle": "Exclusao de Livros e Autores Excluir o autor cadastrado",
               "timedOut": null,
-              "duration": 639,
+              "duration": 559,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "960fa1e9-7e0d-47e3-a4f0-e74729b76352",
-              "parentUUID": "71de9738-4896-4ecc-b5df-bf632df37fb9",
+              "uuid": "b6c92b58-242a-44a0-bb1e-1c9bc174196c",
+              "parentUUID": "26aa3992-e4d8-424f-b541-2ae221a0b638",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3dbd257a-3d3a-4594-abc4-3475a92ae0e2",
-            "960fa1e9-7e0d-47e3-a4f0-e74729b76352"
+            "81bfe1a4-5289-4ad4-b84c-053ad38767f1",
+            "b6c92b58-242a-44a0-bb1e-1c9bc174196c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2628,
+          "duration": 2284,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -103,7 +103,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -115,7 +115,7 @@
       "options": {
         "reportDir": "cypress/results",
         "overwrite": false,
-        "html": true,
+        "html": false,
         "json": true,
         "inline": true
       },

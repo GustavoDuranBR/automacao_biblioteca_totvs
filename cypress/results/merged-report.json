@@ -5,9 +5,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 1,
-        "start": "2024-12-02T21:12:00.865Z",
-        "end": "2024-12-02T21:12:09.672Z",
-        "duration": 8807,
+        "start": "2024-12-03T19:11:06.128Z",
+        "end": "2024-12-03T19:11:14.966Z",
+        "duration": 8838,
         "testsRegistered": 2,
         "passPercent": 50,
         "pendingPercent": 0,
@@ -18,7 +18,7 @@
     },
     "results": [
         {
-            "uuid": "e19a4b78-dae6-4846-a355-956024029d32",
+            "uuid": "105f0a56-8310-4aa3-a68c-3eb718dd5937",
             "title": "",
             "fullFile": "cypress\\e2e\\features\\login.feature",
             "file": "cypress\\e2e\\features\\login.feature",
@@ -27,7 +27,7 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "8e28f001-8cde-4e89-88db-68db2377010e",
+                    "uuid": "25713d80-84bb-46d1-b7e0-62c3a80c3f11",
                     "title": "Login",
                     "fullFile": "",
                     "file": "",
@@ -38,7 +38,7 @@
                             "title": "Acesso com sucesso",
                             "fullTitle": "Login Acesso com sucesso",
                             "timedOut": null,
-                            "duration": 3499,
+                            "duration": 3590,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -47,8 +47,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "90731bf1-dec6-403a-9a7b-ca8fac974616",
-                            "parentUUID": "8e28f001-8cde-4e89-88db-68db2377010e",
+                            "uuid": "bf3c2597-77f5-47bb-9fb5-128e8a45c967",
+                            "parentUUID": "25713d80-84bb-46d1-b7e0-62c3a80c3f11",
                             "isHook": false,
                             "skipped": false
                         },
@@ -56,7 +56,7 @@
                             "title": "Acesso negado",
                             "fullTitle": "Login Acesso negado",
                             "timedOut": null,
-                            "duration": 3074,
+                            "duration": 3061,
                             "state": "failed",
                             "speed": null,
                             "pass": false,
@@ -69,22 +69,22 @@
                                 "estack": "Error: Mensagem de erro n\u00c3\u00a3o encontrada\n    at Context.eval (cypress/e2e/pages/login_page.js:33:22)",
                                 "diff": null
                             },
-                            "uuid": "b787e700-b5a7-4073-b94b-514ae2ccee01",
-                            "parentUUID": "8e28f001-8cde-4e89-88db-68db2377010e",
+                            "uuid": "de511b9c-2d00-4d17-8c84-db177ef52e3a",
+                            "parentUUID": "25713d80-84bb-46d1-b7e0-62c3a80c3f11",
                             "isHook": false,
                             "skipped": false
                         }
                     ],
                     "suites": [],
                     "passes": [
-                        "90731bf1-dec6-403a-9a7b-ca8fac974616"
+                        "bf3c2597-77f5-47bb-9fb5-128e8a45c967"
                     ],
                     "failures": [
-                        "b787e700-b5a7-4073-b94b-514ae2ccee01"
+                        "de511b9c-2d00-4d17-8c84-db177ef52e3a"
                     ],
                     "pending": [],
                     "skipped": [],
-                    "duration": 6573,
+                    "duration": 6651,
                     "root": false,
                     "rootEmpty": false,
                     "_timeout": 2000
@@ -100,7 +100,7 @@
             "_timeout": 2000
         },
         {
-            "uuid": "9d325b11-5563-4361-88aa-c0626b2d264b",
+            "uuid": "7258cb38-2936-4726-9e02-dfa8a6cebb6d",
             "title": "",
             "fullFile": "cypress\\e2e\\features\\autores.feature",
             "file": "cypress\\e2e\\features\\autores.feature",
@@ -109,7 +109,7 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "31443d87-9dea-405a-a04a-0ba73526451d",
+                    "uuid": "c1db9aa3-5a6d-427c-9bda-6fed6cdc2ddf",
                     "title": "Pagina Autores",
                     "fullFile": "",
                     "file": "",
@@ -120,7 +120,7 @@
                             "title": "Cadastrar Autor utilizando o menu lateral com sucesso",
                             "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral com sucesso",
                             "timedOut": null,
-                            "duration": 2069,
+                            "duration": 2485,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -129,8 +129,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "0f188542-2ba3-48da-9ab2-e22bd1684b7b",
-                            "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+                            "uuid": "b360863a-cc8a-4f92-9cab-eebbc588a503",
+                            "parentUUID": "c1db9aa3-5a6d-427c-9bda-6fed6cdc2ddf",
                             "isHook": false,
                             "skipped": false
                         },
@@ -138,7 +138,7 @@
                             "title": "Cadastrar Autor utilizando o menu lateral sem preencher o campo Nacionalidade",
                             "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral sem preencher o campo Nacionalidade",
                             "timedOut": null,
-                            "duration": 1105,
+                            "duration": 992,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -147,8 +147,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "a747ed72-dac4-4f5d-be62-e5a5d804cb1f",
-                            "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+                            "uuid": "2ffdf3e8-a10e-40d9-a4e9-61f7cc70178a",
+                            "parentUUID": "c1db9aa3-5a6d-427c-9bda-6fed6cdc2ddf",
                             "isHook": false,
                             "skipped": false
                         },
@@ -156,7 +156,7 @@
                             "title": "Cadastrar Autor utilizando o menu lateral sem preencher o campo Nome do Autor",
                             "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral sem preencher o campo Nome do Autor",
                             "timedOut": null,
-                            "duration": 1142,
+                            "duration": 947,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -165,8 +165,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "3e94f6b6-58f7-4ac1-af85-fab41eaf593d",
-                            "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+                            "uuid": "34b2bdf6-2cca-43e4-bd87-f27784a10a7e",
+                            "parentUUID": "c1db9aa3-5a6d-427c-9bda-6fed6cdc2ddf",
                             "isHook": false,
                             "skipped": false
                         },
@@ -174,7 +174,7 @@
                             "title": "Cadastrar Autor utilizando o menu lateral sem preencher os campos",
                             "fullTitle": "Pagina Autores Cadastrar Autor utilizando o menu lateral sem preencher os campos",
                             "timedOut": null,
-                            "duration": 863,
+                            "duration": 702,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -183,23 +183,23 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "62d24c93-984f-4954-881d-5c4f7c7e889d",
-                            "parentUUID": "31443d87-9dea-405a-a04a-0ba73526451d",
+                            "uuid": "4d40e229-f954-442d-8331-281ca93bb08a",
+                            "parentUUID": "c1db9aa3-5a6d-427c-9bda-6fed6cdc2ddf",
                             "isHook": false,
                             "skipped": false
                         }
                     ],
                     "suites": [],
                     "passes": [
-                        "0f188542-2ba3-48da-9ab2-e22bd1684b7b",
-                        "a747ed72-dac4-4f5d-be62-e5a5d804cb1f",
-                        "3e94f6b6-58f7-4ac1-af85-fab41eaf593d",
-                        "62d24c93-984f-4954-881d-5c4f7c7e889d"
+                        "b360863a-cc8a-4f92-9cab-eebbc588a503",
+                        "2ffdf3e8-a10e-40d9-a4e9-61f7cc70178a",
+                        "34b2bdf6-2cca-43e4-bd87-f27784a10a7e",
+                        "4d40e229-f954-442d-8331-281ca93bb08a"
                     ],
                     "failures": [],
                     "pending": [],
                     "skipped": [],
-                    "duration": 5179,
+                    "duration": 5126,
                     "root": false,
                     "rootEmpty": false,
                     "_timeout": 2000
@@ -215,7 +215,7 @@
             "_timeout": 2000
         },
         {
-            "uuid": "4e58d925-d815-44a7-b86c-fd4d152a51cb",
+            "uuid": "35f26c00-964b-421c-b8ca-75a95c68aea4",
             "title": "",
             "fullFile": "cypress\\e2e\\features\\autores_api.feature",
             "file": "cypress\\e2e\\features\\autores_api.feature",
@@ -224,7 +224,7 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+                    "uuid": "b5224199-ff73-4286-8e6e-924d9662f6d1",
                     "title": "Testar API de Autores",
                     "fullFile": "",
                     "file": "",
@@ -235,7 +235,7 @@
                             "title": "Listar todos os autores",
                             "fullTitle": "Testar API de Autores Listar todos os autores",
                             "timedOut": null,
-                            "duration": 449,
+                            "duration": 119,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -244,8 +244,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "214561fd-b87d-4f7b-b4e5-0ff9c16cc0fa",
-                            "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+                            "uuid": "459e8dcd-c7fe-45c4-8287-8191d609b9b8",
+                            "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
                             "isHook": false,
                             "skipped": false
                         },
@@ -253,7 +253,7 @@
                             "title": "Cadastrar um novo autor",
                             "fullTitle": "Testar API de Autores Cadastrar um novo autor",
                             "timedOut": null,
-                            "duration": 73,
+                            "duration": 71,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -262,8 +262,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "41dc3a5e-2866-4eb5-9620-14c304abc302",
-                            "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+                            "uuid": "0f6a8e15-a354-40e4-a62f-5f81e0866aa4",
+                            "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
                             "isHook": false,
                             "skipped": false
                         },
@@ -271,7 +271,7 @@
                             "title": "Atualizar um autor existente",
                             "fullTitle": "Testar API de Autores Atualizar um autor existente",
                             "timedOut": null,
-                            "duration": 112,
+                            "duration": 118,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -280,8 +280,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "10417c98-69fc-4ae7-84f2-6123a8c46180",
-                            "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+                            "uuid": "80475f10-5aff-4cb2-bdf2-37d9141dcc27",
+                            "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
                             "isHook": false,
                             "skipped": false
                         },
@@ -289,7 +289,7 @@
                             "title": "Deletar um autor existente",
                             "fullTitle": "Testar API de Autores Deletar um autor existente",
                             "timedOut": null,
-                            "duration": 158,
+                            "duration": 157,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -298,23 +298,23 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "7eb01508-f4fc-4816-bc45-8378455ec2c8",
-                            "parentUUID": "c509e688-b0b0-4dca-a1fa-48045268bd66",
+                            "uuid": "9c231560-4074-4605-8544-97e1e26ca035",
+                            "parentUUID": "b5224199-ff73-4286-8e6e-924d9662f6d1",
                             "isHook": false,
                             "skipped": false
                         }
                     ],
                     "suites": [],
                     "passes": [
-                        "214561fd-b87d-4f7b-b4e5-0ff9c16cc0fa",
-                        "41dc3a5e-2866-4eb5-9620-14c304abc302",
-                        "10417c98-69fc-4ae7-84f2-6123a8c46180",
-                        "7eb01508-f4fc-4816-bc45-8378455ec2c8"
+                        "459e8dcd-c7fe-45c4-8287-8191d609b9b8",
+                        "0f6a8e15-a354-40e4-a62f-5f81e0866aa4",
+                        "80475f10-5aff-4cb2-bdf2-37d9141dcc27",
+                        "9c231560-4074-4605-8544-97e1e26ca035"
                     ],
                     "failures": [],
                     "pending": [],
                     "skipped": [],
-                    "duration": 792,
+                    "duration": 465,
                     "root": false,
                     "rootEmpty": false,
                     "_timeout": 2000
@@ -330,7 +330,7 @@
             "_timeout": 2000
         },
         {
-            "uuid": "cfaad6e4-14c4-4239-9ae0-8e1f4fd2a365",
+            "uuid": "5e3506ac-7076-4477-94ac-abe2578e08e7",
             "title": "",
             "fullFile": "cypress\\e2e\\features\\livros.feature",
             "file": "cypress\\e2e\\features\\livros.feature",
@@ -339,7 +339,7 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "dc76a50d-81b8-4709-b6f8-a74a3c726b24",
+                    "uuid": "6daf52e8-41ef-4db2-9dcb-abe395728323",
                     "title": "Pagina Livros",
                     "fullFile": "",
                     "file": "",
@@ -350,7 +350,7 @@
                             "title": "Cadastrar Livro utilizando o menu lateral com sucesso",
                             "fullTitle": "Pagina Livros Cadastrar Livro utilizando o menu lateral com sucesso",
                             "timedOut": null,
-                            "duration": 6492,
+                            "duration": 5525,
                             "state": "passed",
                             "speed": "medium",
                             "pass": true,
@@ -359,8 +359,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "d7311224-4e77-4156-bd7b-1e2702a3f307",
-                            "parentUUID": "dc76a50d-81b8-4709-b6f8-a74a3c726b24",
+                            "uuid": "4ec8f5bf-045c-4804-aa35-293eccbe3b0d",
+                            "parentUUID": "6daf52e8-41ef-4db2-9dcb-abe395728323",
                             "isHook": false,
                             "skipped": false
                         },
@@ -368,7 +368,7 @@
                             "title": "Cadastrar Livro utilizando o menu lateral sem preencher o campo T\u00c3\u00adtulo",
                             "fullTitle": "Pagina Livros Cadastrar Livro utilizando o menu lateral sem preencher o campo T\u00c3\u00adtulo",
                             "timedOut": null,
-                            "duration": 4459,
+                            "duration": 4343,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -377,8 +377,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "da70ca7b-9dff-4d62-b248-e09247ca3ecb",
-                            "parentUUID": "dc76a50d-81b8-4709-b6f8-a74a3c726b24",
+                            "uuid": "e60ddd17-1bcb-4d9c-be51-5e3d4fcdc843",
+                            "parentUUID": "6daf52e8-41ef-4db2-9dcb-abe395728323",
                             "isHook": false,
                             "skipped": false
                         },
@@ -386,17 +386,17 @@
                             "title": "Cadastrar Livro utilizando o menu lateral sem preencher o campo Autor",
                             "fullTitle": "Pagina Livros Cadastrar Livro utilizando o menu lateral sem preencher o campo Autor",
                             "timedOut": null,
-                            "duration": 5229,
+                            "duration": 4814,
                             "state": "passed",
-                            "speed": "medium",
+                            "speed": "fast",
                             "pass": true,
                             "fail": false,
                             "pending": false,
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "53a2c2ac-4870-4745-b12b-ddede460dfaa",
-                            "parentUUID": "dc76a50d-81b8-4709-b6f8-a74a3c726b24",
+                            "uuid": "763c2334-f507-4dda-80d0-5cb2f45391cc",
+                            "parentUUID": "6daf52e8-41ef-4db2-9dcb-abe395728323",
                             "isHook": false,
                             "skipped": false
                         },
@@ -404,7 +404,7 @@
                             "title": "Cadastrar Livro utilizando o menu lateral sem preencher o campo Editora",
                             "fullTitle": "Pagina Livros Cadastrar Livro utilizando o menu lateral sem preencher o campo Editora",
                             "timedOut": null,
-                            "duration": 5589,
+                            "duration": 5418,
                             "state": "passed",
                             "speed": "medium",
                             "pass": true,
@@ -413,23 +413,23 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "292006d8-fb70-4a44-9dd4-5310b822e7d9",
-                            "parentUUID": "dc76a50d-81b8-4709-b6f8-a74a3c726b24",
+                            "uuid": "2a367d61-9fd3-4052-80c2-2ba4e9ad497b",
+                            "parentUUID": "6daf52e8-41ef-4db2-9dcb-abe395728323",
                             "isHook": false,
                             "skipped": false
                         }
                     ],
                     "suites": [],
                     "passes": [
-                        "d7311224-4e77-4156-bd7b-1e2702a3f307",
-                        "da70ca7b-9dff-4d62-b248-e09247ca3ecb",
-                        "53a2c2ac-4870-4745-b12b-ddede460dfaa",
-                        "292006d8-fb70-4a44-9dd4-5310b822e7d9"
+                        "4ec8f5bf-045c-4804-aa35-293eccbe3b0d",
+                        "e60ddd17-1bcb-4d9c-be51-5e3d4fcdc843",
+                        "763c2334-f507-4dda-80d0-5cb2f45391cc",
+                        "2a367d61-9fd3-4052-80c2-2ba4e9ad497b"
                     ],
                     "failures": [],
                     "pending": [],
                     "skipped": [],
-                    "duration": 21769,
+                    "duration": 20100,
                     "root": false,
                     "rootEmpty": false,
                     "_timeout": 2000
@@ -445,7 +445,7 @@
             "_timeout": 2000
         },
         {
-            "uuid": "8883e3a8-85e6-44b0-9737-94cb01952bff",
+            "uuid": "9d2f463c-7095-40a9-b1f8-2e6077289c8d",
             "title": "",
             "fullFile": "cypress\\e2e\\features\\edicoes.feature",
             "file": "cypress\\e2e\\features\\edicoes.feature",
@@ -454,7 +454,7 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "f67ca562-bcab-45c9-afb0-6d37e6e7d9c1",
+                    "uuid": "a9d5806d-9bcf-4d9f-8407-ce14a0181abe",
                     "title": "Edicao de Livros e Autores",
                     "fullFile": "",
                     "file": "",
@@ -465,7 +465,7 @@
                             "title": "Editar o autor cadastrado",
                             "fullTitle": "Edicao de Livros e Autores Editar o autor cadastrado",
                             "timedOut": null,
-                            "duration": 2345,
+                            "duration": 2031,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -474,8 +474,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "8edeb224-0778-4d0e-8ca8-ac37d0ce4d78",
-                            "parentUUID": "f67ca562-bcab-45c9-afb0-6d37e6e7d9c1",
+                            "uuid": "19ba1564-eef8-4c19-81b9-63aba789220e",
+                            "parentUUID": "a9d5806d-9bcf-4d9f-8407-ce14a0181abe",
                             "isHook": false,
                             "skipped": false
                         },
@@ -483,7 +483,7 @@
                             "title": "Editar o Livro cadastrado",
                             "fullTitle": "Edicao de Livros e Autores Editar o Livro cadastrado",
                             "timedOut": null,
-                            "duration": 1350,
+                            "duration": 1378,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -492,21 +492,21 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "3f0b1721-652c-470d-b141-85aeed2890d7",
-                            "parentUUID": "f67ca562-bcab-45c9-afb0-6d37e6e7d9c1",
+                            "uuid": "911a8e6f-f0ce-484f-87ff-0d50572b33a6",
+                            "parentUUID": "a9d5806d-9bcf-4d9f-8407-ce14a0181abe",
                             "isHook": false,
                             "skipped": false
                         }
                     ],
                     "suites": [],
                     "passes": [
-                        "8edeb224-0778-4d0e-8ca8-ac37d0ce4d78",
-                        "3f0b1721-652c-470d-b141-85aeed2890d7"
+                        "19ba1564-eef8-4c19-81b9-63aba789220e",
+                        "911a8e6f-f0ce-484f-87ff-0d50572b33a6"
                     ],
                     "failures": [],
                     "pending": [],
                     "skipped": [],
-                    "duration": 3695,
+                    "duration": 3409,
                     "root": false,
                     "rootEmpty": false,
                     "_timeout": 2000
@@ -522,7 +522,7 @@
             "_timeout": 2000
         },
         {
-            "uuid": "bd7e86aa-782e-4124-9020-bce1a773f4b2",
+            "uuid": "948452e6-cb06-4a05-b7b0-1309c839374c",
             "title": "",
             "fullFile": "cypress\\e2e\\features\\exclusoes.feature",
             "file": "cypress\\e2e\\features\\exclusoes.feature",
@@ -531,7 +531,7 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "71de9738-4896-4ecc-b5df-bf632df37fb9",
+                    "uuid": "26aa3992-e4d8-424f-b541-2ae221a0b638",
                     "title": "Exclusao de Livros e Autores",
                     "fullFile": "",
                     "file": "",
@@ -542,7 +542,7 @@
                             "title": "Excluir o Livro cadastrado",
                             "fullTitle": "Exclusao de Livros e Autores Excluir o Livro cadastrado",
                             "timedOut": null,
-                            "duration": 1989,
+                            "duration": 1725,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -551,8 +551,8 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "3dbd257a-3d3a-4594-abc4-3475a92ae0e2",
-                            "parentUUID": "71de9738-4896-4ecc-b5df-bf632df37fb9",
+                            "uuid": "81bfe1a4-5289-4ad4-b84c-053ad38767f1",
+                            "parentUUID": "26aa3992-e4d8-424f-b541-2ae221a0b638",
                             "isHook": false,
                             "skipped": false
                         },
@@ -560,7 +560,7 @@
                             "title": "Excluir o autor cadastrado",
                             "fullTitle": "Exclusao de Livros e Autores Excluir o autor cadastrado",
                             "timedOut": null,
-                            "duration": 639,
+                            "duration": 559,
                             "state": "passed",
                             "speed": "fast",
                             "pass": true,
@@ -569,21 +569,21 @@
                             "context": null,
                             "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
                             "err": {},
-                            "uuid": "960fa1e9-7e0d-47e3-a4f0-e74729b76352",
-                            "parentUUID": "71de9738-4896-4ecc-b5df-bf632df37fb9",
+                            "uuid": "b6c92b58-242a-44a0-bb1e-1c9bc174196c",
+                            "parentUUID": "26aa3992-e4d8-424f-b541-2ae221a0b638",
                             "isHook": false,
                             "skipped": false
                         }
                     ],
                     "suites": [],
                     "passes": [
-                        "3dbd257a-3d3a-4594-abc4-3475a92ae0e2",
-                        "960fa1e9-7e0d-47e3-a4f0-e74729b76352"
+                        "81bfe1a4-5289-4ad4-b84c-053ad38767f1",
+                        "b6c92b58-242a-44a0-bb1e-1c9bc174196c"
                     ],
                     "failures": [],
                     "pending": [],
                     "skipped": [],
-                    "duration": 2628,
+                    "duration": 2284,
                     "root": false,
                     "rootEmpty": false,
                     "_timeout": 2000
@@ -607,7 +607,7 @@
             "options": {
                 "quiet": false,
                 "reportFilename": "mochawesome",
-                "saveHtml": true,
+                "saveHtml": false,
                 "saveJson": true,
                 "consoleReporter": "spec",
                 "useInlineDiffs": false,
@@ -619,7 +619,7 @@
             "options": {
                 "reportDir": "cypress/results",
                 "overwrite": false,
-                "html": true,
+                "html": false,
                 "json": true,
                 "inline": true
             },

@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome",
-    "test:sequence": "npx cypress run --spec 'cypress/e2e/features/login.feature,cypress/e2e/features/autores.feature,cypress/e2e/features/autores_api.feature,cypress/e2e/features/livros.feature,cypress/e2e/features/edicoes.feature,cypress/e2e/features/exclusoes.feature'"
+    "test:sequence": "npx cypress run --spec 'cypress/e2e/features/login.feature,cypress/e2e/features/autores.feature,cypress/e2e/features/autores_api.feature,cypress/e2e/features/livros.feature,cypress/e2e/features/edicoes.feature,cypress/e2e/features/exclusoes.feature' && python merge-reports.py"
   },
   "keywords": [],
   "author": "Gustavo Duran",
